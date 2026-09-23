@@ -1,0 +1,211 @@
+ En la parte ultima pongo capturas de la configuración de vlans y dhcp con el CLI o grafico
+--------------------------
+  Resumen del proyecto
+
+Este proyecto consiste en el diseño y la simulación de una infraestructura de red compartida para varias pequeñas empresas ubicadas en un mismo edificio. El problema abordado es la dificultad de estas empresas para disponer de una red propia completa debido a limitaciones económicas, proponiéndose una solución basada en la compartición de recursos.
+
+El objetivo principal es crear una red funcional, segura y organizada mediante el uso de VLANs, que permitan separar lógicamente cada empresa dentro de una misma infraestructura física. Para ello, se emplean dispositivos como routers, switches gestionables y servidores. Se configura un servidor principal encargado de los servicios DHCP y DNS, así como servidores web independientes para cada empresa.
+
+La implementación se realiza utilizando Cisco Packet Tracer, lo que permite simular el entorno real y verificar el correcto funcionamiento de la red. Se utiliza cableado de tipo Cat6 para garantizar un rendimiento adecuado.
+
+Como resultado, se obtiene una solución eficiente, escalable y de bajo coste, capaz de cubrir las necesidades básicas de conectividad y servicios de las empresas, cumpliendo con los objetivos establecidos en el proyecto.
+
+		Palabras clave
+Infraestructura de red
+VLAN
+DHCP
+DNS
+Cisco Packet Tracer
+Redes compartidas
+Switch
+Router
+Servidores
+Seguridad
+--------------------------
+1.1 Introducción al Proyecto
+
+El objetivo de este proyecto es diseñar y simular una infraestructura de red para varias pequeñas empresas ubicadas en un mismo edificio. Este tipo de entorno requiere soluciones eficientes que garanticen la conectividad, la seguridad y la correcta gestión de los recursos de red.
+
+La propuesta se basa en la creación de una infraestructura compartida, en la que diferentes empresas pueden utilizar los mismos recursos físicos manteniendo la independencia lógica de sus redes. Para ello, se utiliza la segmentación mediante VLAN, lo que permite organizar el tráfico de red y asegurar el aislamiento entre las distintas organizaciones.
+
+La red incluye dispositivos fundamentales como routers, switches gestionables y servidores, responsables de proporcionar servicios esenciales como la asignación automática de direcciones IP (DHCP), la resolución de nombres (DNS) y el alojamiento de servicios web. El sistema completo se desarrollará y probará mediante simulación con Cisco Packet Tracer, lo que permitirá validar su funcionamiento antes de una posible implementación real.
+
+Este proyecto se enmarca en un contexto formativo, integrando conocimientos de redes, sistemas y planificación, y centrándose en la resolución de problemas reales en un entorno empresarial.
+
+--------------------------
+
+1.2 Motivación
+
+La motivación de este proyecto surge de la necesidad de ofrecer soluciones de red accesibles para pequeñas empresas que no cuentan con los recursos necesarios para implementar infraestructuras completas de forma individual. La creciente dependencia de las tecnologías de la información hace esencial contar con una red estable, segura y bien estructurada.
+
+En este contexto, el uso compartido de infraestructura se presenta como una alternativa viable para reducir costes sin sacrificar la calidad del servicio. Además, el uso de tecnologías como las VLAN permite garantizar la separación y la seguridad entre empresas, resolviendo uno de los principales retos de este tipo de soluciones.
+
+Por otro lado, este proyecto también responde a la necesidad de aplicar de forma práctica los conocimientos adquiridos durante el ciclo formativo, permitiendo desarrollar competencias relacionadas con el diseño, la configuración y la documentación de redes.
+
+Finalmente, el objetivo es crear una solución funcional y escalable que pueda adaptarse a las necesidades futuras, como la expansión de servicios o el crecimiento de las empresas, reforzando así su valor en el ámbito profesional.
+--------------------------
+1.3 Contextualización
+
+Actualmente, las redes informáticas son un elemento fundamental para el funcionamiento de cualquier empresa, independientemente de su tamaño. La mayoría de las organizaciones dependen de servicios como el acceso a internet, la comunicación interna y el uso de aplicaciones de red para llevar a cabo sus actividades diarias.
+
+En el caso de pequeñas empresas ubicadas en un mismo edificio, es común encontrar limitaciones tanto económicas como técnicas al implementar infraestructuras de red completas de forma individual. Esto suele derivar en soluciones ineficientes, con una organización deficiente del cableado, falta de seguridad o dificultades en la gestión de recursos.
+
+Este proyecto se enmarca en este contexto, proponiendo una solución basada en el uso compartido de infraestructura, que permite optimizar los recursos sin comprometer la seguridad ni el rendimiento de la red. El uso de tecnologías como las VLAN facilita la segmentación de la red, permitiendo que cada empresa disponga de un entorno independiente dentro de la misma estructura física.
+
+Además, el uso de herramientas de simulación como Cisco Packet Tracer permite recrear un escenario realista, facilitando el diseño, la implementación y la validación de la solución propuesta.
+----------------------------
+1.4 Análisis de las soluciones actuales
+
+Actualmente, las pequeñas empresas suelen optar por soluciones individuales para la implementación de sus redes, lo que implica la compra de equipos propios y la configuración independiente de cada infraestructura. Si bien esta opción ofrece mayor control, también conlleva altos costos y menor eficiencia en el uso de recursos.
+
+Otra alternativa común es el uso de redes básicas sin segmentación, donde varios usuarios comparten la misma red sin mecanismos de aislamiento adecuados. Esto puede causar problemas de seguridad, interferencias en el tráfico y dificultades en la gestión de servicios.
+
+En los últimos años, se han empezado a utilizar soluciones más avanzadas basadas en la virtualización y la segmentación de redes mediante VLAN, lo que permite una mejor organización y seguridad sin necesidad de duplicar la infraestructura. Estas soluciones son especialmente adecuadas en entornos compartidos, como edificios con varias empresas.
+
+La propuesta desarrollada en este proyecto se basa en este último enfoque, combinando una infraestructura común con segmentación lógica, con el objetivo de ofrecer una solución más eficiente, segura y económica en comparación con las alternativas tradicionales.
+----------------------------
+Tecnoloxías, linguaxes e
+ferramentas
+----------------------------
+2.1 Tecnologías utilizadas en Cisco Packet Tracer
+
+En este proyecto se utilizan varias tecnologías de red dentro de Cisco Packet Tracer para poder diseñar y simular el funcionamiento de la infraestructura.
+
+Una de las principales tecnologías utilizadas son las VLANs (Virtual Local Area Network), que permiten dividir la red en varias partes dentro de la misma infraestructura física. Gracias a esto, cada empresa puede tener su propia red separada, mejorando la organización y la seguridad.
+
+También se utiliza el enrutamiento (routing) mediante routers, que permite la comunicación entre las diferentes redes o VLANs. Esto es necesario para que los dispositivos de distintas redes puedan comunicarse entre sí cuando sea necesario.
+
+Otra tecnología importante es el protocolo DHCP, que se encarga de asignar automáticamente direcciones IP a los dispositivos de la red, facilitando la configuración y evitando errores manuales.
+
+Además, se utiliza el sistema DNS, que permite traducir nombres de dominio a direcciones IP, haciendo más fácil el acceso a servicios dentro de la red.
+
+Por último, se implementa un servidor web, que permite a cada empresa tener su propia página o servicio accesible dentro de la red.
+
+Todas estas tecnologías se configuran mediante el uso del CLI de Cisco y las interfaces graficas, lo que permite simular un entorno real de trabajo en redes.
+----------------------------
+2.2 Herramientas que se usan en Cisco Packet Tracer
+
+En este proyecto se utiliza principalmente el programa Cisco Packet Tracer, que permite crear y simular redes sin necesidad de usar equipos reales. Gracias a este programa se puede ver cómo funciona la red y comprobar si todo está bien configurado.
+
+Dentro de Packet Tracer se usan varias herramientas. Una de las más importantes es el modo simulación, que permite ver paso a paso cómo se mueven los paquetes por la red. Esto es útil para detectar errores y entender mejor cómo funciona.
+
+También se utiliza el modo tiempo real, donde la red funciona de forma normal, como si fuera una instalación real.
+
+Otra herramienta importante es el CLI (línea de comandos), que se usa para configurar routers y switches. A través de esta herramienta se introducen los comandos necesarios para que la red funcione correctamente.
+
+Además, también se usan las opciones de configuración de los dispositivos, donde se pueden cambiar cosas como direcciones IP, VLANs o configurar los servidores.
+
+En general, estas herramientas permiten crear, configurar y comprobar la red de una forma bastante realista.
+
+----------------------------
+Metodología y planificación del trabajo
+----------------------------
+3.1 Enfoque Metodológico
+
+Para realizar este proyecto se ha seguido un enfoque práctico, basado en el aprendizaje por prueba y error utilizando Cisco Packet Tracer. Primero se ha pensado el diseño de la red y cómo organizar las empresas, y después se ha ido configurando poco a poco.
+
+El trabajo se ha dividido en varias partes, empezando por el diseño, luego la configuración de VLANs, después los servicios y finalmente las pruebas. De esta forma ha sido más fácil organizarse y detectar errores.
+----------------------------
+3.2 Planificación
+
+El proyecto se ha realizado siguiendo una planificación previa, organizada por semanas, para poder avanzar de forma ordenada y llegar a tiempo a la entrega final.
+
+Se han tenido en cuenta las tareas principales como el diseño de la red, la configuración de dispositivos, la implementación de servicios y las pruebas finales.
+----------------------------
+3.2.1 Plan de trabajo
+
+El plan de trabajo seguido ha sido el siguiente:
+
+Diseño inicial de la red
+Creación de la topología en Cisco Packet Tracer
+Configuración de VLANs en los switches
+Configuración de direcciones IP
+Configuración del servidor (DHCP y DNS)
+Configuración del router
+Configuración de los servidores web
+Pruebas de funcionamiento
+Corrección de errores
+Documentación final
+----------------------------
+3.2.2 Esfuerzos y tiempos
+
+El proyecto se ha dividido en varias partes para poder organizar mejor el trabajo. El tiempo se ha repartido según la dificultad de cada tarea. A continuación se muestra una estimación de los tiempos:
+
+| Fase      | Tarea principal                           | Tiempo estimado (horas) | Tiempo real (horas) |
+| --------- | ----------------------------------------- | ----------------------- | ------------------- |
+| 1         | Diseño de la red                          | 5                       | 6                   |
+| 2         | Creación de la topología en Packet Tracer | 5                       | 5                   |
+| 3         | Configuración de VLANs                    | 9                       | 10                  |
+| 4         | Configuración de direcciones IP           | 4                       | 4                   |
+| 5         | Configuración de servidor (DHCP y DNS)    | 7                       | 7                   |
+| 6         | Configuración del router                  | 6                       | 7                   |
+| 7         | Configuración de servidores web           | 3                       | 3                   |
+| 8         | Pruebas y corrección de errores           | 8                       | 8                   |
+| 9         | Documentación                             | 8                       | 8                   |
+| **Total** |                                           | **55 h**                | **58 h**            |
+
+El tiempo total estimado era de unas 55 horas, aunque en la práctica se han necesitado algunas horas más debido a errores y pruebas adicionales.
+
+Las partes que más tiempo llevaron fueron la configuración de VLANs y la resolución de errores, ya que son las más complejas y requieren varias pruebas.
+----------------------------
+3.2.3 Costes de la red
+
+Para calcular el coste de la red se han tenido en cuenta los equipos, el cableado y el tiempo de trabajo necesario para montarla.
+
+A continuación se muestra una estimación sencilla:
+| Elemento            | Cantidad  | Precio unitario | Total           |
+| ------------------- | --------- | --------------- | --------------- |
+| Switches            | 8–10      | 250 €           | 2000 € – 2500 € |
+| Routers             | 4         | 500 €           | 2000 €          |
+| Servidor principal  | 1         | 3350 €          | 3350 €          |
+| Servidores pequeños | 2         | 600 €           | 1200 €          |
+| Cableado Cat6       | 250–400 m | 1,25 €/m        | 312 € – 500 €   |
+
+Coste de mano de obra
+
+También se tiene en cuenta el tiempo de trabajo:
+
+| Trabajo                     | Horas | Precio/hora | Total  |
+| --------------------------- | ----- | ----------- | ------ |
+| Instalación y configuración | 30 h  | 65 €/h      | 1950 € |
+
+
+Coste total aproximado
+Equipos + cableado: 8900 € – 9550 €
+Mano de obra: 1950 €
+
+ Total aproximado de la red: entre 10.850 € y 11.500 €
+
+Este cálculo muestra que montar una red así tiene un coste bastante alto, por lo que compartir la infraestructura entre varias empresas es una buena opción para ahorrar dinero.
+
+----------------------------
+Conclusiones y futuras líneas de trabajo
+----------------------------
+
+4.1 Conclusiones
+
+En este proyecto se ha podido diseñar y simular una red para varias empresas utilizando una infraestructura compartida. A lo largo del trabajo, se han aplicado conocimientos sobre redes, configuración de dispositivos y el uso de herramientas como Cisco Packet Tracer.
+
+Se han cumplido los objetivos planteados, ya que se ha creado una red funcional con VLANs que permiten la separación de cada empresa, y se han configurado servicios como DHCP, DNS y servidores web. Además, se ha verificado el correcto funcionamiento de la red mediante diferentes pruebas.
+
+También se ha constatado que la configuración de una red de este tipo en la práctica tiene un coste bastante elevado, tanto en equipos como en tiempo de trabajo, por lo que compartir la infraestructura es una buena solución para reducir costes.
+
+Por otro lado, este proyecto ha servido para comprender mejor cómo funcionan las redes en un entorno real y para mejorar la configuración y la resolución de problemas.
+
+Como mejora futura, se podrían añadir más servicios, como copias de seguridad o sistemas en la nube, para que la red sea más completa.
+
+En general, el resultado ha sido positivo y se ha logrado una solución que cumple con las expectativas.
+----------------------------
+4.2 Futuras liñas de traballo
+
+De cara al futuro, este proyecto podría mejorarse añadiendo nuevas funcionalidades y haciendo la red más completa y segura.
+
+Una de las mejoras más importantes sería la redundancia de red, para evitar problemas en caso de que falle algún dispositivo o conexión. Por ejemplo, se podrían añadir enlaces o equipos alternativos para que, si falla un switch o un router, la red siga funcionando sin interrupciones.
+
+No sería necesario aplicar redundancia en los servidores en este caso, ya que el tamaño de la red y las necesidades de las empresas no lo hacen imprescindible.
+
+También se podrían añadir más servicios, como sistemas de copias de seguridad, para no perder información, o servicios en la nube que permitan acceder a los datos desde diferentes lugares.
+
+Otra posible mejora sería ampliar la red para incluir más empresas o más dispositivos, haciendo que el sistema sea más escalable.
+
+En general, estas mejoras permitirían hacer la red más fiable, segura y preparada para el futuro.

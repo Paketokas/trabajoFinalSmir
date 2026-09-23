@@ -1,0 +1,68 @@
+Building configuration...
+
+Current configuration : 928 bytes
+!
+version 12.1
+no service timestamps log datetime msec
+no service timestamps debug datetime msec
+no service password-encryption
+!
+hostname Switch
+!
+!
+!
+ptp clock transparent domain 0 profile default
+!
+!
+!
+spanning-tree mode pvst
+spanning-tree extend system-id
+!
+interface FastEthernet0/1
+ switchport access vlan 10
+!
+interface FastEthernet1/1
+ switchport access vlan 10
+!
+interface FastEthernet2/1
+ switchport access vlan 10
+!
+interface FastEthernet3/1
+ switchport access vlan 10
+!
+interface FastEthernet4/1
+ switchport access vlan 10
+!
+interface FastEthernet5/1
+ switchport access vlan 10
+!
+interface FastEthernet6/1
+ switchport access vlan 10
+!
+interface FastEthernet7/1
+ switchport access vlan 10
+!
+interface FastEthernet8/1
+ switchport access vlan 10
+!
+interface FastEthernet9/1
+ switchport access vlan 10
+!
+interface Vlan1
+ no ip address
+ shutdown
+!
+!
+!
+!
+line con 0
+!
+line vty 0 4
+ login
+line vty 5 15
+ login
+!
+!
+!
+!
+end
